@@ -93,3 +93,19 @@ h1, h2, .section-intro h2, .ww-title, .wood-head h2, .hero h1 {
 
 /* Fără bara „Glisează”: pozele se rotesc trăgând cu degetul sau mouse-ul. */
 .ww-nav { display: none; }
+
+/* Telefon: meniul pe două coloane, câte un card mic pentru fiecare produs. */
+@media (max-width: 599px) {
+  .chalkboard { padding-inline: 14px; }
+  .board-filters { gap: 4px 0; padding-right: 0; }
+  .board-filter { padding-left: 0; padding-right: 14px; }
+  .board-filter::after { right: 14px; }
+  .board-list { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .board-item, .board-item:last-child { display: grid; grid-template-columns: 1fr auto; grid-template-rows: auto 1fr auto; gap: 6px 8px; padding: 12px; border: 1px solid color-mix(in oklab, var(--ink) 14%, transparent); border-radius: 12px; background: #15120f; }
+  .board-line { display: contents; }
+  .board-line h4 { grid-column: 1 / -1; grid-row: 1; font-size: var(--fs-sm); line-height: 1.2; }
+  .board-item p { grid-column: 1 / -1; grid-row: 2; margin: 0; font-size: var(--fs-xs); line-height: 1.4; }
+  .board-dots, .board-thumb { display: none; }
+  .board-price { grid-column: 1; grid-row: 3; align-self: center; font-size: var(--fs-md); }
+  .board-line .add-btn { grid-column: 2; grid-row: 3; margin: 0; }
+}
