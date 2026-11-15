@@ -90,3 +90,6 @@ h1, h2, .section-intro h2, .ww-title, .wood-head h2, .hero h1 {
 .special-copy h3 { font-family: var(--sans); font-weight: 800; font-style: normal; letter-spacing: -.02em; text-transform: uppercase; }
 .specials .special-copy p, .specials.is-scrolly .special-copy p { font-family: var(--sans); font-style: normal; font-size: var(--fs-md); line-height: 1.5; }
 .special-copy .price { color: var(--paper); background: var(--orange); border-color: var(--orange); }
+
+/* Fără bara „Glisează”: pozele se rotesc trăgând cu degetul sau mouse-ul. */
+.ww-nav { display: none; }
