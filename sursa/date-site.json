@@ -336,7 +336,11 @@
   "fotografiiIlustrative": false,
   "surseFoto": [
     {
-      "nume": "RestaurantGuru (poze de pe Google)",
+      "nume": "Poze ilustrative: Pexels (licență gratuită)",
+      "url": "https://www.pexels.com/"
+    },
+    {
+      "nume": "Poze din local: RestaurantGuru (poze de pe Google)",
       "url": "https://restaurantguru.com/COMPLEX-COMMANDO-Dorohoi"
     }
   ],
@@ -345,11 +349,12 @@
       "fisier": "commando-coperta.webp",
       "latime": 1600,
       "inaltime": 900,
-      "alt": "Grafică Commando: o tușă portocalie pe negru",
-      "titlu": "Commando",
+      "alt": "Burger crispy cu piept de pui pane și sos, pe fundal negru",
+      "titlu": "Crispy",
       "mobil": "commando-coperta-mobil.webp",
       "latimeMobil": 660,
-      "inaltimeMobil": 870
+      "inaltimeMobil": 870,
+      "ilustrativa": true
     },
     "share": {
       "fisier": "commando-distribuire.jpg",
@@ -377,23 +382,63 @@
       "inaltime": 645,
       "alt": "Limonadă cu pai galben și floarea-soarelui pe o masă la Commando",
       "titlu": "Pe terasă"
+    },
+    "crispy": {
+      "fisier": "commando-crispy.webp",
+      "latime": 900,
+      "inaltime": 900,
+      "alt": "Burger cu pui crispy, salată și sos",
+      "titlu": "Crispy chicken",
+      "ilustrativa": true
+    },
+    "grill": {
+      "fisier": "commando-grill.webp",
+      "latime": 900,
+      "inaltime": 900,
+      "alt": "Sandwich cu carne la grătar și salată",
+      "titlu": "Sandwich grill",
+      "ilustrativa": true
+    },
+    "wrap": {
+      "fisier": "commando-wrap.webp",
+      "latime": 900,
+      "inaltime": 900,
+      "alt": "Tortilla rulată cu pui, tăiată în două",
+      "titlu": "Crispy sandwich",
+      "ilustrativa": true
     }
   },
   "extra": {
-    "_nota": "Propuneri pentru patron (neaprobate). Apar doar pe demo.html cât timp activ=false.",
-    "activ": false,
+    "_nota": "Pe site apar doar specialitățile (sectiuni). Roata și voucherul sunt propuneri neaprobate.",
+    "activ": true,
     "specialitati": {
-      "titlu": "Specialitățile casei",
-      "text": "Trei lucruri pe care clienții le laudă în recenzii.",
-      "produse": [],
-      "imagini": {},
+      "titlu": "Trei feluri de încercat",
+      "text": "Câte unul din fiecare: crispy, grill și crispy sandwich.",
+      "produse": [
+        "Crispy chicken",
+        "Sandwich cu piept de pui grill",
+        "Crispy sandwich cu chicken crispy"
+      ],
+      "imagini": {
+        "Crispy chicken": "crispy",
+        "Sandwich cu piept de pui grill": "grill",
+        "Crispy sandwich cu chicken crispy": "wrap"
+      },
       "tente": {
-        "Pizza Margherita": "#c8402e",
-        "Burger pui": "#d9a24e",
-        "Crispy de pui": "#c98a3c"
+        "Crispy chicken": "#f26a1b",
+        "Sandwich cu piept de pui grill": "#c8402e",
+        "Crispy sandwich cu chicken crispy": "#d9a24e"
       },
       "ingrediente": {
-        "Pizza Margherita": [
+        "Crispy chicken": [
+          "firimitura",
+          "cascaval",
+          "firimitura",
+          "firimitura",
+          "cascaval",
+          "firimitura"
+        ],
+        "Sandwich cu piept de pui grill": [
           "frunza",
           "rosie",
           "cascaval",
@@ -401,35 +446,24 @@
           "rosie",
           "cascaval"
         ],
-        "Burger pui": [
+        "Crispy sandwich cu chicken crispy": [
+          "firimitura",
           "cascaval",
           "frunza",
-          "rosie",
           "firimitura",
           "cascaval",
           "frunza"
-        ],
-        "Crispy de pui": [
-          "firimitura",
-          "firimitura",
-          "cascaval",
-          "firimitura",
-          "firimitura",
-          "firimitura"
         ]
       },
       "povesti": {
-        "Pizza Margherita": {
-          "eticheta": "Clasica",
-          "text": "Mozzarella, sos de roșii și busuioc. Cea mai simplă pizza din meniu și una dintre cele mai lăudate în recenzii."
+        "Crispy chicken": {
+          "eticheta": "Meniu crispy · 330 g"
         },
-        "Burger pui": {
-          "eticheta": "Rapid și sățios",
-          "text": "Pui, cheddar, salată și roșii, servit cu cartofi și sos. Bun pentru o pauză de prânz scurtă."
+        "Sandwich cu piept de pui grill": {
+          "eticheta": "Sandwich grill · 340 g"
         },
-        "Crispy de pui": {
-          "eticheta": "Crocant",
-          "text": "Crispy de pui cu cartofi și sos. Merge la fel de bine în local sau la pachet."
+        "Crispy sandwich cu chicken crispy": {
+          "eticheta": "Crispy sandwich · 330 g"
         }
       }
     },
@@ -475,7 +509,10 @@
       "_nota": "Serviciul care trimite codul pe e-mail (Supabase, gratuit). Gol = mod demonstrație: codul apare pe ecran.",
       "supabaseUrl": "",
       "supabaseCheie": ""
-    }
+    },
+    "sectiuni": [
+      "specialitati"
+    ]
   },
   "locatii": [
     {

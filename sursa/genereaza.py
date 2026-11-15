@@ -547,11 +547,13 @@ def order_parts(on):
 
 def with_extras(base, on, demo=False):
     out = dict(base)
+    # "extra.sectiuni" alege ce apare pe site: "specialitati", "roata", "voucher". Lipsă = toate.
+    parts = set(DATA["extra"].get("sectiuni") or ["specialitati", "roata", "voucher"]) if not demo else {"specialitati", "roata", "voucher"}
     out.update({
         "extraHead": (('<meta name="robots" content="noindex">' if demo else "") + extra_head) if on else "",
-        "extraModal": extras["modal"] if on else "",
-        "extraAfterMenu": extras["afterMenu"] if on else "",
-        "extraOffers": extras["offers"] if on else "",
+        "extraModal": extras["modal"] if on and "voucher" in parts else "",
+        "extraAfterMenu": extras["afterMenu"] if on and "specialitati" in parts else "",
+        "extraOffers": extras["offers"] if on and "roata" in parts else "",
         "extraScripts": extra_script if on else "",
     })
     out.update(order_parts(ORDERS.get("activ") or demo))

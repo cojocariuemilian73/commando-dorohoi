@@ -85,3 +85,8 @@ h1, h2, .section-intro h2, .ww-title, .wood-head h2, .hero h1 {
 .ww-cap { color: #1a1716; }
 .ww-arrow { color: var(--ink); border-color: color-mix(in oklab, var(--ink) 35%, transparent); }
 .ww-arrow:hover, .ww-arrow:focus-visible { color: var(--paper); background: var(--orange); border-color: var(--orange); }
+
+/* Specialitățile: același scris gros ca restul site-ului. */
+.special-copy h3 { font-family: var(--sans); font-weight: 800; font-style: normal; letter-spacing: -.02em; text-transform: uppercase; }
+.specials .special-copy p, .specials.is-scrolly .special-copy p { font-family: var(--sans); font-style: normal; font-size: var(--fs-md); line-height: 1.5; }
+.special-copy .price { color: var(--paper); background: var(--orange); border-color: var(--orange); }
