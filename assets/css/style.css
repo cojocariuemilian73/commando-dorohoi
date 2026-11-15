@@ -607,3 +607,13 @@ html.has-window .wood-pin.is-dragging { cursor: grabbing; }
 .board-filter:first-of-type { padding-left: 0; }
 .board-filter:first-of-type::after { left: 0; }
 @media (max-width: 899px) { .board-filter { padding-left: 0; padding-right: 22px; } .board-filter::after { left: 0; right: 22px; } }
+
+/* O singură locație: cardul ia tot rândul, cu datele în stânga și harta în dreapta. */
+@media (min-width: 900px) {
+  .locations-grid:has(> .location-card:only-child) { grid-template-columns: 1fr; }
+  .location-card:only-child { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); grid-template-rows: auto auto auto 1fr; column-gap: clamp(28px, 4vw, 56px); align-items: start; }
+  .location-card:only-child > :not(.location-map) { grid-column: 1; }
+  .location-card:only-child > .button { justify-self: start; }
+  .location-card:only-child > .location-map { grid-column: 2; grid-row: 1 / -1; margin: 0; height: 100%; }
+  .location-card:only-child > .location-map iframe { height: 100%; min-height: 340px; }
+}
