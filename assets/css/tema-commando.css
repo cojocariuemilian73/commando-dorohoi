@@ -76,3 +76,12 @@ h1, h2, .section-intro h2, .ww-title, .wood-head h2, .hero h1 {
 .location-card { background: #181514; }
 .map iframe, .location-map iframe { filter: grayscale(.4) brightness(.9); }
 .site-header.is-scrolled { background: color-mix(in oklab, var(--paper) 92%, transparent); }
+
+/* Caruselul de poze: textul pentru școli stă pe un panou portocaliu. */
+.ww-copy { padding: clamp(22px, 3vw, 40px); border-radius: 14px; color: var(--paper); background: linear-gradient(120deg, var(--orange), var(--orange-deep)); }
+.ww-title { color: var(--paper); }
+.ww-text { color: color-mix(in oklab, var(--paper) 85%, transparent); }
+.ww-frame { background: #fff; }
+.ww-cap { color: #1a1716; }
+.ww-arrow { color: var(--ink); border-color: color-mix(in oklab, var(--ink) 35%, transparent); }
+.ww-arrow:hover, .ww-arrow:focus-visible { color: var(--paper); background: var(--orange); border-color: var(--orange); }

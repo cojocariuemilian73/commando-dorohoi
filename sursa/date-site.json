@@ -18,7 +18,7 @@
     "recenzii": "",
     "harta": "",
     "instagram": "",
-    "facebook": "",
+    "facebook": "https://www.facebook.com/loveturta/",
     "email": "",
     "whatsapp": "",
     "scrieRecenzie": "https://www.google.com/maps/place/Restaurant+COMMANDO/@47.9529738,26.4032588,17z/data=!4m6!3m5!1s0x47346148954ec0bb:0x2f23fe6854522b5a!8m2!3d47.9529738!4d26.4032588"
@@ -334,7 +334,12 @@
   "evaluareGoogle": null,
   "recenzii": [],
   "fotografiiIlustrative": false,
-  "surseFoto": [],
+  "surseFoto": [
+    {
+      "nume": "RestaurantGuru (poze de pe Google)",
+      "url": "https://restaurantguru.com/COMPLEX-COMMANDO-Dorohoi"
+    }
+  ],
   "imagini": {
     "hero": {
       "fisier": "commando-coperta.webp",
@@ -358,6 +363,20 @@
       "inaltime": 452,
       "alt": "Interiorul restaurantului Commando: canapea capitonată, mese de lemn și un raft cu decor și numele Commando",
       "titlu": "La Commando"
+    },
+    "salon": {
+      "fisier": "commando-salon.webp",
+      "latime": 482,
+      "inaltime": 320,
+      "alt": "Salonul Commando, cu mese din lemn, scaune gri și numele Commando pe perete",
+      "titlu": "Salonul"
+    },
+    "limonada": {
+      "fisier": "commando-limonada.webp",
+      "latime": 480,
+      "inaltime": 645,
+      "alt": "Limonadă cu pai galben și floarea-soarelui pe o masă la Commando",
+      "titlu": "Pe terasă"
     }
   },
   "extra": {
@@ -492,7 +511,9 @@
       "titlu": "Pauza mare,|rezolvată.",
       "text": "De luni până vineri, între 08:00 și 15:00, livrăm la școli și licee fără taxă de transport sau ambalare. Pentru pauze cu bună dispoziție, o alternativă la pachețelul clasic de acasă. Pentru comenzi sună la 0755 024 992.",
       "imagini": [
-        "interior"
+        "interior",
+        "salon",
+        "limonada"
       ]
     },
     "meniu": "Meniu",
