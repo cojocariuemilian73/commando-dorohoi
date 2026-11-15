@@ -1,0 +1,564 @@
+{
+  "_instructiuni": [
+    "Câmpurile goale (\"\") nu apar pe site. Completează-le și rulează: python sursa/genereaza.py",
+    "Meniu: adaugă produse în lista \"produse\" a unei categorii: {\"nume\": \"...\", \"descriere\": \"...\", \"pret\": 0, \"imagine\": \"cheie din imagini\"}. \"imagine\" e opțională; fără ea, cardul arată numele scris frumos. \"pret\": null afișează «La cerere», \"preferat\": true pune «Preferata casei».",
+    "Meniu: o categorie nouă are 'id' (fără spații/diacritice), 'nume', 'imagine' (o cheie din 'imagini') și 'produse'. Apare automat ca filă nouă.",
+    "Când meniul e confirmat, pune 'meniuExemplu': false.",
+    "Locații: prima e cea principală. Pentru o locație nouă completează 'telefon', 'program', 'latitudine' și 'longitudine'.",
+    "Contact: 'whatsapp' = numărul în format internațional (ex. 40756764805), 'email', 'instagram' = linkul profilului.",
+    "Recenzii: fiecare are {\"autor\": \"...\", \"stele\": 5, \"text\": \"textul exact\"} și, opțional, \"url\" spre recenzia originală. Pune câte vrei; se derulează spre dreapta.",
+    "Filtre meniu: lista 'filtre' = [cheie, text]. Fiecare produs are \"etichete\" cu cheile filtrelor. \"Preferata casei\" vine din \"preferat\": true."
+  ],
+  "brand": "Restaurant Commando",
+  "description": "Restaurant Commando din Dorohoi, Strada Ștefan cel Mare 37: meniuri crispy, sandwich-uri grill, clasice și pane, de la 10 lei. Livrare la școli și licee fără taxă, de luni până vineri, 08:00–15:00.",
+  "publicUrl": "https://cojocariuemilian73.github.io/commando-dorohoi/",
+  "atelier": "",
+  "deschidere": "",
+  "linkuri": {
+    "recenzii": "",
+    "harta": "",
+    "instagram": "",
+    "facebook": "",
+    "email": "",
+    "whatsapp": "",
+    "scrieRecenzie": "https://www.google.com/maps/place/Restaurant+COMMANDO/@47.9529738,26.4032588,17z/data=!4m6!3m5!1s0x47346148954ec0bb:0x2f23fe6854522b5a!8m2!3d47.9529738!4d26.4032588"
+  },
+  "video": {
+    "youtube": "",
+    "titlu": "",
+    "credit": ""
+  },
+  "meniuExemplu": false,
+  "meniu": [
+    {
+      "id": "crispy",
+      "nume": "Meniuri crispy · 330 g",
+      "imagine": "",
+      "produse": [
+        {
+          "nume": "Crispy bacon",
+          "descriere": "Bacon, bechamel, pesmet, cartofi pai, sos de usturoi, chiflă.",
+          "pret": 15,
+          "etichete": [
+            "crispy"
+          ]
+        },
+        {
+          "nume": "Crispy cheese",
+          "descriere": "Cașcaval clasic, bechamel, pesmet, cartofi pai, sos de usturoi, chiflă.",
+          "pret": 15,
+          "etichete": [
+            "crispy"
+          ]
+        },
+        {
+          "nume": "Crispy chicken",
+          "descriere": "Piept de pui, bechamel, pesmet, cartofi pai, sos de usturoi, chiflă.",
+          "pret": 15,
+          "etichete": [
+            "crispy"
+          ]
+        },
+        {
+          "nume": "Crispy mozzarella",
+          "descriere": "Mozzarella, bechamel, pesmet, cartofi pai, sos de usturoi, chiflă.",
+          "pret": 15,
+          "etichete": [
+            "crispy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grill",
+      "nume": "Sandwich grill · 340 g",
+      "imagine": "",
+      "produse": [
+        {
+          "nume": "Sandwich cu ceafă grill",
+          "descriere": "Ceafă de porc, cașcaval, castraveți în oțet, muștar, sos de usturoi, chiflă.",
+          "pret": 15,
+          "etichete": [
+            "grill"
+          ]
+        },
+        {
+          "nume": "Sandwich cu piept de pui grill",
+          "descriere": "Piept de pui, cașcaval, roșii, castraveți, salată verde, chiflă.",
+          "pret": 15,
+          "etichete": [
+            "grill"
+          ]
+        },
+        {
+          "nume": "Sandwich cu pulpe dezosate grill",
+          "descriere": "Pulpe dezosate, cașcaval, roșii, castraveți, salată verde, chiflă.",
+          "pret": 15,
+          "etichete": [
+            "grill"
+          ]
+        },
+        {
+          "nume": "Sandwich cu cotlet grill",
+          "descriere": "Cotlet de porc, cașcaval, castraveți în oțet, muștar, sos de usturoi, chiflă.",
+          "pret": 15,
+          "etichete": [
+            "grill"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clasic",
+      "nume": "Sandwich clasic · 340 g",
+      "imagine": "",
+      "produse": [
+        {
+          "nume": "Sandwich cu mușchi file",
+          "descriere": "Mușchi file, cremă de brânză, roșii, castraveți, ardei kapia, salată verde, turtă.",
+          "pret": 14,
+          "etichete": [
+            "sub-15"
+          ]
+        },
+        {
+          "nume": "Sandwich cu șuncă de Praga",
+          "descriere": "Șuncă Praga, cremă de brânză, roșii, castraveți, ardei kapia, salată verde, turtă.",
+          "pret": 14,
+          "etichete": [
+            "sub-15"
+          ]
+        },
+        {
+          "nume": "Sandwich cu șuncă de pui",
+          "descriere": "Șuncă de pui, cremă de brânză, roșii, castraveți, ardei kapia, salată verde, turtă.",
+          "pret": 14,
+          "etichete": [
+            "sub-15"
+          ]
+        },
+        {
+          "nume": "Sandwich cu salam bănățean",
+          "descriere": "Salam bănățean, cremă de brânză, roșii, castraveți, ardei kapia, salată verde, turtă.",
+          "pret": 14,
+          "etichete": [
+            "sub-15"
+          ]
+        },
+        {
+          "nume": "Sandwich cu bacon",
+          "descriere": "Bacon, cremă de brânză, roșii, castraveți, ardei kapia, salată verde, turtă.",
+          "pret": 14,
+          "etichete": [
+            "sub-15"
+          ]
+        },
+        {
+          "nume": "Sandwich cu salam picant",
+          "descriere": "Salam picant, cremă de brânză, roșii, castraveți, ardei kapia, salată verde, turtă.",
+          "pret": 14,
+          "etichete": [
+            "picant",
+            "sub-15"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pane",
+      "nume": "Sandwich pane · 200 g",
+      "imagine": "",
+      "produse": [
+        {
+          "nume": "Sandwich pane cu cașcaval",
+          "descriere": "Pâine toast, cașcaval, șuncă de pui, maioneză, muștar, bechamel.",
+          "pret": 10,
+          "etichete": [
+            "sub-15"
+          ]
+        },
+        {
+          "nume": "Sandwich pane cu mozzarella",
+          "descriere": "Pâine toast, mozzarella, șuncă de pui, maioneză, muștar, bechamel.",
+          "pret": 10,
+          "etichete": [
+            "sub-15"
+          ]
+        },
+        {
+          "nume": "Sandwich pane cu emmentaler",
+          "descriere": "Pâine toast, emmentaler, șuncă de pui, maioneză, muștar, bechamel.",
+          "pret": 10,
+          "etichete": [
+            "sub-15"
+          ]
+        },
+        {
+          "nume": "Sandwich pane cu brânză topită",
+          "descriere": "Pâine toast, brânză topită, șuncă de pui, maioneză, muștar, bechamel.",
+          "pret": 10,
+          "etichete": [
+            "sub-15"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "happy",
+      "nume": "Meniuri happy · 330 g",
+      "imagine": "",
+      "produse": [
+        {
+          "nume": "Meniu chiftelute",
+          "descriere": "Chiftelute de pui, cartofi pai, sos de usturoi, chiflă.",
+          "pret": 15,
+          "etichete": []
+        },
+        {
+          "nume": "Meniu crochete",
+          "descriere": "Crochete de cașcaval, cartofi pai, ketchup, chiflă.",
+          "pret": 15,
+          "etichete": []
+        },
+        {
+          "nume": "Meniu șnițel",
+          "descriere": "Baghete din piept de pui pane, cartofi pai, sos de usturoi, chiflă.",
+          "pret": 15,
+          "etichete": []
+        },
+        {
+          "nume": "Meniu cartofi pai",
+          "descriere": "Cartofi pai cu cașcaval ras.",
+          "pret": 15,
+          "etichete": []
+        }
+      ]
+    },
+    {
+      "id": "gratinat",
+      "nume": "Sandwich gratinat · 330 g",
+      "imagine": "",
+      "produse": [
+        {
+          "nume": "Sandwich cu cașcaval & bacon",
+          "descriere": "Bacon, cașcaval afumat, sos de usturoi, sos cheddar, baton.",
+          "pret": 12,
+          "etichete": [
+            "sub-15"
+          ]
+        },
+        {
+          "nume": "Sandwich cu cașcaval & mușchi file",
+          "descriere": "Cașcaval, mușchi file, sos de usturoi, sos cheddar, baton.",
+          "pret": 12,
+          "etichete": [
+            "sub-15"
+          ]
+        },
+        {
+          "nume": "Sandwich cu mozzarella & șuncă",
+          "descriere": "Mozzarella, șuncă de pui, sos de usturoi, sos cheddar, baton.",
+          "pret": 12,
+          "etichete": [
+            "sub-15"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "crispy-sandwich",
+      "nume": "Crispy sandwich · 330 g",
+      "imagine": "",
+      "produse": [
+        {
+          "nume": "Crispy sandwich cu bacon crispy",
+          "descriere": "Tortilla, bacon crispy, cartofi pai, sos de usturoi, sos cheddar.",
+          "pret": 14,
+          "etichete": [
+            "crispy",
+            "sub-15"
+          ]
+        },
+        {
+          "nume": "Crispy sandwich cu chicken crispy",
+          "descriere": "Tortilla, chicken crispy, cartofi pai, sos de usturoi, sos cheddar.",
+          "pret": 14,
+          "etichete": [
+            "crispy",
+            "sub-15"
+          ]
+        },
+        {
+          "nume": "Crispy sandwich cu mozzarella crispy",
+          "descriere": "Tortilla, mozzarella crispy, cartofi pai, sos de usturoi, sos cheddar.",
+          "pret": 14,
+          "etichete": [
+            "crispy",
+            "sub-15"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "meat",
+      "nume": "Meat sandwich · 300 g",
+      "imagine": "",
+      "produse": [
+        {
+          "nume": "Meat sandwich cu cârnați la tigaie",
+          "descriere": "Baton, cârnați la tigaie, muștar.",
+          "pret": 12,
+          "etichete": [
+            "sub-15"
+          ]
+        },
+        {
+          "nume": "Meat sandwich cu cârnăciori grill",
+          "descriere": "Baton, cârnăciori la grătar, muștar.",
+          "pret": 12,
+          "etichete": [
+            "sub-15"
+          ]
+        },
+        {
+          "nume": "Meat sandwich cu chiftelute de pui",
+          "descriere": "Baton, chiftelute de pui, muștar.",
+          "pret": 12,
+          "etichete": [
+            "sub-15"
+          ]
+        }
+      ]
+    }
+  ],
+  "evaluareGoogle": null,
+  "recenzii": [],
+  "fotografiiIlustrative": false,
+  "surseFoto": [],
+  "imagini": {
+    "hero": {
+      "fisier": "commando-coperta.webp",
+      "latime": 1600,
+      "inaltime": 900,
+      "alt": "Grafică Commando: o tușă portocalie pe negru",
+      "titlu": "Commando",
+      "mobil": "commando-coperta-mobil.webp",
+      "latimeMobil": 660,
+      "inaltimeMobil": 870
+    },
+    "share": {
+      "fisier": "commando-distribuire.jpg",
+      "latime": 1200,
+      "inaltime": 630,
+      "alt": "Restaurant Commando Dorohoi"
+    },
+    "interior": {
+      "fisier": "commando-interior.webp",
+      "latime": 678,
+      "inaltime": 452,
+      "alt": "Interiorul restaurantului Commando: canapea capitonată, mese de lemn și un raft cu decor și numele Commando",
+      "titlu": "La Commando"
+    }
+  },
+  "extra": {
+    "_nota": "Propuneri pentru patron (neaprobate). Apar doar pe demo.html cât timp activ=false.",
+    "activ": false,
+    "specialitati": {
+      "titlu": "Specialitățile casei",
+      "text": "Trei lucruri pe care clienții le laudă în recenzii.",
+      "produse": [],
+      "imagini": {},
+      "tente": {
+        "Pizza Margherita": "#c8402e",
+        "Burger pui": "#d9a24e",
+        "Crispy de pui": "#c98a3c"
+      },
+      "ingrediente": {
+        "Pizza Margherita": [
+          "frunza",
+          "rosie",
+          "cascaval",
+          "frunza",
+          "rosie",
+          "cascaval"
+        ],
+        "Burger pui": [
+          "cascaval",
+          "frunza",
+          "rosie",
+          "firimitura",
+          "cascaval",
+          "frunza"
+        ],
+        "Crispy de pui": [
+          "firimitura",
+          "firimitura",
+          "cascaval",
+          "firimitura",
+          "firimitura",
+          "firimitura"
+        ]
+      },
+      "povesti": {
+        "Pizza Margherita": {
+          "eticheta": "Clasica",
+          "text": "Mozzarella, sos de roșii și busuioc. Cea mai simplă pizza din meniu și una dintre cele mai lăudate în recenzii."
+        },
+        "Burger pui": {
+          "eticheta": "Rapid și sățios",
+          "text": "Pui, cheddar, salată și roșii, servit cu cartofi și sos. Bun pentru o pauză de prânz scurtă."
+        },
+        "Crispy de pui": {
+          "eticheta": "Crocant",
+          "text": "Crispy de pui cu cartofi și sos. Merge la fel de bine în local sau la pachet."
+        }
+      }
+    },
+    "voucher": {
+      "titlu": "Primul sandwich pane e din partea casei.",
+      "text": "Lasă-ne adresa de e-mail. Îți trimitem un cod de confirmare, iar după ce îl introduci primești voucherul pe telefon.",
+      "acord": "Sunt de acord să primesc e-mailuri de la Restaurant Commando. Mă pot dezabona oricând.",
+      "conditii": "Un voucher pe adresă de e-mail, la prima vizită. Valabil 30 de zile.",
+      "imagine": "hero"
+    },
+    "roata": {
+      "titlu": "Încearcă-ți norocul.",
+      "text": "O învârtire pe zi. Premiul e valabil doar azi, până la miezul nopții.",
+      "premii": [
+        {
+          "nume": "Sos extra gratuit",
+          "scurt": "Sos extra"
+        },
+        {
+          "nume": "10% reducere",
+          "scurt": "−10%"
+        },
+        {
+          "nume": "Livrare gratuită",
+          "scurt": "Livrare"
+        },
+        {
+          "nume": "5% reducere",
+          "scurt": "−5%"
+        },
+        {
+          "nume": "Sandwich pane la jumătate de preț",
+          "scurt": "Pane ½"
+        },
+        {
+          "nume": "15% reducere",
+          "scurt": "−15%"
+        }
+      ],
+      "valabilitate": "Valabil doar azi, până la ora 24:00."
+    },
+    "email": {
+      "_nota": "Serviciul care trimite codul pe e-mail (Supabase, gratuit). Gol = mod demonstrație: codul apare pe ecran.",
+      "supabaseUrl": "",
+      "supabaseCheie": ""
+    }
+  },
+  "locatii": [
+    {
+      "oras": "Dorohoi",
+      "adresa": "Strada Ștefan cel Mare 37",
+      "judet": "Botoșani",
+      "reper": "",
+      "telefon": "+40 755 024 992",
+      "latitudine": 47.9529738,
+      "longitudine": 26.4032588,
+      "cautareHarta": "Restaurant COMMANDO, Strada Ștefan cel Mare 37, Dorohoi",
+      "program": []
+    }
+  ],
+  "texte": {
+    "_nota": "Toate textele vizibile ale site-ului. „|” = rând nou în titlu. Cuvintele cu cratimă nu se rup singure.",
+    "titluPagina": "Restaurant Commando Dorohoi — sandwich-uri și meniuri crispy, cu livrare",
+    "logo": {
+      "mare": "COMMANDO",
+      "mic": "restaurant · Dorohoi"
+    },
+    "hero": "Sandwich-uri calde și crispy, de la 10 lei.",
+    "poveste": {
+      "titlu": "",
+      "lead": "",
+      "text": "",
+      "imagineMare": "hero",
+      "imagineMica": "hero",
+      "imagineTrei": "",
+      "cuvinteCheie": []
+    },
+    "galerie": {
+      "titlu": "Pauza mare,|rezolvată.",
+      "text": "De luni până vineri, între 08:00 și 15:00, livrăm la școli și licee fără taxă de transport sau ambalare. Pentru pauze cu bună dispoziție, o alternativă la pachețelul clasic de acasă. Pentru comenzi sună la 0755 024 992.",
+      "imagini": [
+        "interior"
+      ]
+    },
+    "meniu": "Meniu",
+    "recenzii": "Ce spun clienții.",
+    "locatii": "Ne găsești pe Ștefan cel Mare.",
+    "subsol": "Sandwich-uri și meniuri crispy în Dorohoi. Livrare la școli și licee.",
+    "paginaMeniu": {
+      "titlu": "Meniu — Restaurant Commando Dorohoi",
+      "descriere": "Meniul Commando: meniuri crispy, sandwich grill, clasic și pane.",
+      "linkPoveste": "Despre Commando",
+      "imagine": "hero"
+    },
+    "heroCuvinteAurii": [
+      "calde",
+      "crispy,"
+    ],
+    "navGalerie": "Școli"
+  },
+  "folderImagini": "assets/img/commando/",
+  "filtre": [
+    [
+      "crispy",
+      "Crispy"
+    ],
+    [
+      "grill",
+      "Grill"
+    ],
+    [
+      "picant",
+      "Picant"
+    ],
+    [
+      "sub-15",
+      "Sub 15 lei"
+    ]
+  ],
+  "_sursaMeniu": "Cele două flyere Commando trimise de utilizator (15.11.2026): prețuri, gramaje și ingrediente exact ca pe flyere.",
+  "comenzi": {
+    "_nota": "Comenzi online. 'activ': false = coșul apare doar pe demo.html. Cu 'activ': true apare și pe index.html și meniu.html. Prețurile din 'grupuri' sunt EXEMPLE până le confirmă localul ('exemple': false după confirmare).",
+    "activ": true,
+    "exemple": false,
+    "supabaseUrl": "",
+    "supabaseCheie": "",
+    "_supabase": "Gol = mod demonstrație: comenzile rămân în browser și se văd în panou.html din același browser. Cheia e cea publică (anon), niciodată service_role.",
+    "ridicare": {
+      "minute": null
+    },
+    "livrare": {
+      "activ": true,
+      "taxa": 0,
+      "minim": 0,
+      "minute": null,
+      "zona": "Dorohoi"
+    },
+    "grupuri": {},
+    "categorii": {},
+    "prezentare": true,
+    "_prezentare": "true = coșul apare pe site, dar comanda nu pleacă: clientul e rugat să sune. Pune false când Fabi urmărește panou.html.",
+    "_livrare": "Taxa și minimul de livrare pentru restul clienților sunt [DE COMPLETAT]; flyerul spune doar: la școli și licee fără taxă de transport sau ambalare."
+  },
+  "eticheteIlustrative": false,
+  "tema": {
+    "_nota": "Tema Commando: negru, portocaliu și alb, ca pe flyer.",
+    "css": "assets/css/tema-commando.css",
+    "culoare": "#100e0d",
+    "schema": "dark"
+  }
+}

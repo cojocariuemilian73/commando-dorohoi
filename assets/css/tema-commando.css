@@ -1,0 +1,78 @@
+/* Tema Commando: ca flyerul — negru, portocaliu aprins, alb, titluri groase cu litere mari. */
+:root {
+  --paper: #100e0d;
+  --ink: #f7f3ef;
+  --accent: #f26a1b;
+  --accent-text: #ff8a3d;
+  --oak: #ff8a3d;
+  --cream: #ffffff;
+  --espresso: #100e0d;
+  --orange: #f26a1b;
+  --orange-deep: #d6401a;
+  --muted: color-mix(in oklab, var(--ink) 66%, var(--paper));
+  --line: color-mix(in oklab, var(--ink) 14%, transparent);
+}
+
+/* Fundal negru curat, cu o lumină portocalie în colț; fără nervurile de lemn. */
+body {
+  background:
+    radial-gradient(1000px 700px at 100% 0%, color-mix(in oklab, var(--orange) 14%, transparent), transparent 60%),
+    var(--paper);
+}
+body::after { opacity: .35; }
+
+/* Titluri ca pe flyer: groase, cu litere mari. */
+h1, h2, .section-intro h2, .ww-title, .wood-head h2, .hero h1 {
+  font-family: var(--sans); font-weight: 800; letter-spacing: -.035em; text-transform: uppercase;
+}
+.hero h1 { line-height: .92; }
+.hero h1 .sw.is-gold { color: var(--orange); }
+.type-cursor { background: var(--orange); }
+.wordmark > span { font-size: var(--fs-lg); letter-spacing: -.02em; line-height: .9; }
+.wordmark small { letter-spacing: .04em; text-transform: uppercase; }
+
+/* Butoane portocalii cu text negru. */
+.button-dark { color: var(--paper); background: var(--orange); }
+@media (hover: hover) and (pointer: fine) {
+  .button-dark:hover { color: var(--paper); background: var(--accent-text); }
+}
+.mobile-actions a + a { color: var(--paper); background: var(--orange); }
+
+/* Meniul: tablă neagră cu ramă portocalie, scris gros în loc de cretă. */
+.chalkboard {
+  background: #0b0a09;
+  border: 3px solid var(--orange);
+  border-radius: 14px;
+  box-shadow: 0 30px 60px -30px #000;
+}
+.chalkboard::before { display: none; }
+.chalkboard h3, .chalkboard h4, .board-price, .board-filter, .board-fav, .board-empty { text-shadow: none; }
+.board-group h3 { color: var(--orange); font: 800 var(--fs-md)/1 var(--sans); letter-spacing: .02em; text-transform: uppercase; transform: none; }
+.board-line h4 { font: 700 var(--fs-md)/1.15 var(--sans); }
+.board-price { color: var(--orange); font: 800 var(--fs-md)/1 var(--sans); }
+.board-item p { font: 400 var(--fs-xs)/1.5 var(--sans); }
+.board-filter { font: 700 var(--fs-sm)/1 var(--sans); text-transform: uppercase; letter-spacing: .04em; }
+.board-filter::after { background: var(--orange); height: 3px; clip-path: inset(0 100% 0 0); }
+.board-filter[aria-pressed="true"] { color: var(--orange); }
+.doodle { display: none; }
+.add-btn { color: var(--paper); background: var(--orange); border-color: var(--orange); }
+
+/* Secțiunea pentru școli: un panou portocaliu, cu tușă. */
+.wood-head { padding: clamp(24px, 4vw, 48px); border-radius: 14px; color: var(--paper); background: linear-gradient(120deg, var(--orange), var(--orange-deep)); }
+.wood-head h2 { color: var(--paper); }
+.wood-head > p:last-child { color: color-mix(in oklab, var(--paper) 85%, transparent); max-width: 56ch; font-size: var(--fs-md); }
+/* O singură poză lângă panou: interiorul, la mărimea ei reală ca să rămână clară. */
+.wood-figure { height: auto; aspect-ratio: 678 / 452; width: min(100%, 678px); }
+.wood-figure .image-frame { border-radius: 14px; }
+.wood-strip { width: 100%; }
+.wood-figure { flex: 1 1 auto; }
+@media (min-width: 900px) { .wood-layout { grid-template-columns: minmax(0, 1fr) minmax(0, 560px); } .wood-rail { margin: 0; padding: 0; overflow: visible; } .wood-figure { width: 100%; } }
+
+/* Coșul de comenzi. */
+.cart-bar { color: var(--paper); background: var(--orange); }
+.mode-switch input:checked + span { color: var(--paper); background: var(--orange); }
+.status-steps li.is-done::before { color: var(--paper); background: var(--orange); border-color: var(--orange); }
+.order-note { border-left-color: var(--orange); }
+.location-card { background: #181514; }
+.map iframe, .location-map iframe { filter: grayscale(.4) brightness(.9); }
+.site-header.is-scrolled { background: color-mix(in oklab, var(--paper) 92%, transparent); }
